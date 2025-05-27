@@ -25,7 +25,7 @@ class dokter{
         vector<pasien*> daftar_pasien;
 
         dokter (string pNama): nama(pNama){
-            cout << "Dokter \"" << nama << "\" ada\"";
+            cout << "Dokter \"" << nama << "\" ada\n";
         }
         ~dokter(){
             cout << "Dokter \"" << nama
@@ -44,7 +44,7 @@ void pasien::cetakDokter(){
     << this->nama << "\":\n";
     //auto digunakan dalam perulangan
     for (auto& a : daftar_dokter){
-        cout << a->nama << "n";
+        cout << a->nama << "\n";
     }
     cout << endl;
 }
