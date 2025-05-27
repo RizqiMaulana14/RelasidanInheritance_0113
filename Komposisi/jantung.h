@@ -9,7 +9,7 @@ class jantung {
             cout << "Jantung Dihidupkan\n";
         }
         ~jantung(){
-            cout << "Jantung Dimatikan\n"
+            cout << "Jantung Dimatikan\n";
         }
 };
 #endif
