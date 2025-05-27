@@ -14,6 +14,7 @@ class pasien{
             cout << "Pasien \"" << nama
             << "\" tidak ada\n";
         }
+
         void tambahDokter(dokter*);
         void cetakDokter();
 };
@@ -31,3 +32,17 @@ class dokter{
             << "\" tidak ada\n";
         }
 };
+
+void pasien::tambahDokter(dokter* pDokter){
+    daftar_dokter.push_back(pDokter);
+}
+
+void pasien::cetakDokter(){
+    cout << "Daftar Dokter Yang Menangani Pasien \""
+    << this->nama << "\":\n";
+    //auto digunakan dalam perulangan
+    for (auto& a : daftar_dokter){
+        cout << a->nama << "n";
+    }
+    cout << endl;
+}
